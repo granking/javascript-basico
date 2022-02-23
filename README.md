@@ -8,3 +8,4 @@
 - Segundo paso: implementar las fórmulas en JavaScript
 - Tercer paso: crear fnciones
 - Cuarto paso: integrar JS con HTML
+

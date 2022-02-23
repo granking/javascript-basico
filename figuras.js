@@ -29,7 +29,12 @@ console.group("triangulo");
 //     + "cm"
 //     );
     
-const alturaTriangulo = 5.5;
+function alturaTriangulo(lado1, lado2, base) {
+    if (lado1 === lado2) {
+        return Math.sqrt((lado1 **2) - ((base **2)/4));
+    }
+    console.log('No es un triangulo Isósceles');
+}
 // console.log("La altura del triángulo es: " + alturaTriangulo + "cm")
 
 function perimetroTriangulo(lado1, lado2, base) {
