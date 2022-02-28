@@ -1,11 +1,9 @@
 function calcularMediaAritmetica(lista) {
-    const sumaLista = lista.reduce(
-        function (valorAcumulado = 0, nuevoElemento) {
+    const sumaLista = lista.reduce(function (nuevoElemento, valorAcumulado = 0) {
         return valorAcumulado + nuevoElemento;
         }
     );
-    const promedioLista = sumaLista / lista.length;
-    return promedioLista;
+    return sumaLista / lista.length;
 }
 
 const lista1 = [
@@ -16,14 +14,18 @@ const lista1 = [
     400000000,
 ];
 
+const listaOrdenada = lista1.sort(function (a, b){
+    return a - b;
+})
+
 const mitadLista1 = parseInt(lista1.length / 2);
 
 function esPar(numerito) {
     if (numerito % 2 === 0) {
-        return true;
+        return 1;
     }else {
-        return false;
-    } 
+        return 0;
+    }
 }
 
 let mediana;
